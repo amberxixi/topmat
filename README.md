@@ -3,23 +3,24 @@
 ![Alt](show/1.png)
 ![Alt](show/2.png)
 ![Alt](show/3.png)
-## 项目部署
+## 项目介绍
+1.  [项目技术文档](TopMat平台技术文档.pdf)
+2.  LICENSE: 
+   GNU GENERAL PUBLIC LICENSE
+3.  引用: 
+  Informatization Plan of Chinese Academy of Sciences，Grant No.CAS-WX2021SF-0102
+3.  技术支持:
+  apps_support@sccas.cn
+  
+## 项目使用
 
+### 项目开发环境
 1. 安装mongo
     mongo没问题建议安装最新版，有问题安装4.4.6
    
    - [mongo官网](https://mongodb.com)
 
-2. 导入数据
-    ```sh
-    mongoimport --db topmat --collection materials --file C:\XXX\XXX\data.json
-    ```
-    **将data.json导入mongo时必须使用mongo命令**，使用数据库工具会导致导入数据出现问题！
-    使用该命令时，务必退出mongo环境！
-
-     若mongoimport报错，需要去https://www.mongodb.com/try/download/database-tools 下载MongoDB Datebase Tools，然后将其中bin文件夹中的所有内容复制到mongo的bin文件夹下既可。[详细内容可参考此链接]( https://blog.csdn.net/weixin_44443576/article/details/120998855?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.queryctrv4&spm=1001.2101.3001.4242.1&utm_relevant_index=3)
-
-3. 安装NodeJS
+2. 安装NodeJS
     
 	不推荐最新版本，建议使用v16.0.0
 	
@@ -27,7 +28,7 @@
       
    - [nodejs官网](https://nodejs.org)
 
-4. 安装Python
+3. 安装Python
 	
 	不推荐最新版本，建议使用v3.9.0
 	
@@ -35,9 +36,19 @@
 
 	- [Python官网](https://www.python.org/)
 
-5. 项目开发
+### 项目开发
+1. 导入数据
+    ```sh
+    mongoimport --db topmat --collection materials --file C:\XXX\XXX\data.json
+    ```
+    **将data.json导入mongo时必须使用mongo命令**，使用数据库工具会导致导入数据出现问题！
     
-	4.1 Linux & Mac 环境：
+
+     若mongoimport报错，需要下载[MongoDB Datebase Tools](https://www.mongodb.com/try/download/database-tools)，然后将其中bin文件夹中的所有内容复制到mongo的bin文件夹下既可。[详细内容可参考此链接]( https://blog.csdn.net/weixin_44443576/article/details/120998855?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.queryctrv4&spm=1001.2101.3001.4242.1&utm_relevant_index=3)
+
+2. 项目开发
+    
+	2.1 Linux & Mac 环境：
     
  	(1) navigate to web
     ```sh
@@ -56,7 +67,7 @@
         source env_dev.sh
         flask run
     ```
-    4.2 Windows 环境：
+    2.2 Windows 环境：
 	
 	(1) navigate to web
     ```sh
@@ -76,12 +87,11 @@
         flask run
     ```
 
-6. 项目URL
+3. 项目URL
     ```sh
     localhost:8082
     ```
-
-7. 项目部署
+### 项目部署
    1)  安装docker
         - [docker官网](https://www.docker.com)
    
