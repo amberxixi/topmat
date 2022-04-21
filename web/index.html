@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="google-site-verification" content="1twZdINtd20cvjkC0JO_nHFEhDpBftNsAWcY4K4gCKo" />
-	<!-- for ChemDoodle -->
-	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="/static/lib/ChemDoodleWeb/ChemDoodleWeb.js"></script>
-	<link rel="stylesheet" href="static/lib/ChemDoodleWeb/ChemDoodleWeb.css" type="text/css">
-	<!-- for BZVisualizer -->
-	<script src="/static/lib/three.min.js"></script>
-    <script src="/static/lib/THREE.MeshLine.js"></script>
-	<script src="/static/lib/OrthographicTrackballControls.js"></script>
-	<script type="text/javascript" src="/static/lib/seekpath/BZVisualizer.js"></script>
-	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <title>Materiae - Material Sciences Database | IOP and CNIC, CAS </title>
+	<title>topmat database | CNIC, CAS </title>
 	<!-- for favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png">
@@ -26,18 +17,27 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="/static/icon/browserconfig.xml">
 	<meta name="theme-color" content="#000000">
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-	<script>
-	var beamer_config = {
-		product_id : 'QerXmyHR14750', // DO NOT CHANGE: This is your product code on Beamer
-		selector: 'whatsNew'
-	};
-	</script>
-	<script type="text/javascript" src="https://app.getbeamer.com/js/beamer-embed.js" defer="defer"></script>
-	
+</head>
 
-  </body>
+<body>
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+</body>
+<!-- Piwik  for Web Statistics-->
+<script type="text/javascript">
+	var _paq = _paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function () {
+		var u = "//analytics.escience.org.cn/";
+		_paq.push(['setTrackerUrl', u + 'piwik.php']);
+		_paq.push(['setSiteId', '67']);
+		var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+		g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+	})();
+</script>
+<!-- End Piwik Code -->
+
 </html>
